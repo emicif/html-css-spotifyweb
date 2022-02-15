@@ -6,7 +6,7 @@
 
 
 
-
+/* layout */
 
 .container {
     display: flex;
@@ -17,30 +17,90 @@
 nav {
     width: 20%;
     background-color: black;
-    height: 100vh;
+    min-height:calc(100vh - 200px);
 }
 
 .interno {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 100vh;
-   
 }
 
 
 header {
     width: 100%;
-    background-color: red;
     height: 20%;  
     display: flex;
- 
-  
-  
+    background-color: blue;
 }
 
 main {
     width: 100%;
-    background-color:aqua;
-    height: 100vh;
+    min-height:calc(100vh - 200px);
+    background-color: red;
+}
+
+
+.footer {
+    display: inline-block;
+    background-color: grey;
+    width: 100%;
+    height: 100px;
+}
+
+
+/* fine layout */
+
+
+
+
+/* inizio nav */
+
+#logo {
+    height: 25%;
+    display: block;
+    margin: 5px auto;
+}
+
+ul li button {
+    font-size: 24px;
+    display: block;
+    margin: 15px auto;
+    color: white;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+#menu-bottom {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: flex-end;
+    color: white;
+}
+
+
+
+.account {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
+}
+
+.icon-user {
+    background-color: grey;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0px auto;
 }
