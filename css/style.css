@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+nav {
+    width: 20%;
+    background-color: black;
+    height: 100vh;
+}
+
+.interno {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+   
+}
+
+
+header {
+    width: 100%;
+    background-color: red;
+    height: 20%;  
+    display: flex;
+ 
+  
+  
+}
+
+main {
+    width: 100%;
+    background-color:aqua;
+    height: 100vh;
+}
