@@ -24,38 +24,41 @@ aside {
     background-color: black;
     height:calc(100vh - 100px);
     display: flex;
-    width: 10%;
+    flex-direction: column;
+  
 }
 
 .interno {
     display: flex;
-    /*flex-direction: column;*/
-    /*width: 85%;*/
     flex-grow: 1;
     height:calc(100vh - 100px);
     overflow-y: auto;
-    position: relative;
+    
 }
 
 
 header {
-    width: 100%;
     height: 15%;  
     background-color: rgba(20, 20, 20, 0.7);
+    width: calc(100% - 200px);
+    justify-content: flex-end;
+    align-items: center;
     position: absolute;
     top: 0px;
     right: 0px;
 }
 
+
+
 main {
-    /*width: 100%;*/
     height:calc(100vh - 100px);
     background-color: rgb(50, 50, 50);
     flex-grow: 1;
-    
 }
 
+
 .figure-container {
+   /* height:calc(100vh - 100px - 15%);*/
     padding-top: 15%;
 }
 
@@ -64,7 +67,7 @@ main {
 }
 
 footer {
-    background-color: red;
+    background-color: rgba(20, 20, 20);
     width: 100%;
     height: 100px;
 }
@@ -83,25 +86,50 @@ footer {
     margin: 5px auto;
 }
 
-ul li button {
+ul li .button {
     font-size: 24px;
     display: block;
     margin: 15px auto;
-    color: white;
+    
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
+.button {
+    text-align: center;
 }
+
+
 
 #menu-top {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    color: grey;
 }
 
+
+/* menu playlist */
+
+
+.playlist h3 {
+    color: white;
+}
+
+.playlist i {
+    color: black;
+    background-color: grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+.playlist ul li {
+    margin: 10px;
+}
+
+
+
+
+
+/* menu bottom */
 
 #menu-bottom {
     display: flex;
@@ -112,49 +140,47 @@ ul li button {
 }
 
 
-.account {
+.account i {
     font-size: 24px;
     text-align: center;
     margin: 10px;
 }
 
-.icon-user {
+.icon-user i {
     background-color: grey;
     padding: 10px;
     border-radius: 50%;
     margin: 0px auto;
 }
 
-.icon-arrow {
+.icon-arrow i {
     border: 1px solid white;
     border-radius: 50%;
     padding: 5px;
     margin: 10px auto;
 }
 
+
+
+
+
 /* fine nav */
 
 
 /******* HEADER *******/
 
-div a {
-    color: white;
-}
 
 
 .flex {
     display: flex;
 }
 
-.header {
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 
 /* link header */
 
-.header a {
+header a {
+    color: white;
     text-decoration: none;
     border: 1px solid white;
     border-radius: 40%;
@@ -168,7 +194,7 @@ div a {
 
 /* lista main */
 
-div ul {
+.list ul {
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -176,7 +202,7 @@ div ul {
 
 }
 
-div ul li {
+.list ul li {
     display: inline-block;
     list-style-type: none;
     vertical-align: middle;
@@ -222,5 +248,11 @@ figure {
     margin-top: 5px;
 }
 
+
+/* terzo blocco figure */
+
+.third-figure img {
+    border-radius: 50%;
+}
 
 

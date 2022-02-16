@@ -13,7 +13,7 @@
     }
 
     img {
-        height: 60%;
+        height: 65%;
     }
 
     figure {
@@ -21,5 +21,55 @@
     }
 }
 
+
+/* menu top */
+
+@media screen and (max-width: 600px) {
+    #menu-top ul li span {
+        display: none;
+    }
+    
+}
+
+/* menu bottom */
+
+@media screen and (max-width: 600px) {
+    #menu-bottom .account span {
+        display: none;
+    }
+
+    #menu-bottom .account i {
+        display: block;
+        margin: 15px auto;
+
+    }
+}
+    
+
+
+
+/* menu playlist */
+
+@media screen and (max-width: 600px) {
+    .playlist {
+        display: none;
+    }
+    
+}
+
+
+
+/* secondo blocco figure */
+
+@media screen and (max-width: 600px) {
+    .second-block {
+        display: none;
+    }
+
+    .third-block {
+        display: none;
+    }
+    
+}
 
 
