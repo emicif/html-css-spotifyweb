@@ -1,4 +1,27 @@
 
+
+/* logo */
+
+@media screen and (min-width: 620px) {
+    #logo-small {
+        display: none;
+    }  
+   }
+
+@media screen and (max-width: 620px) {
+     #logo {
+         display: none;
+     }  
+    }
+
+@media screen and (max-width: 620px) {
+    #logo-small {
+        display: block;
+    }
+    
+}
+
+
 /* figure main */
 
 

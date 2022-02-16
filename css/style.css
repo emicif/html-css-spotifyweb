@@ -59,7 +59,6 @@ main {
 
 
 .figure-container {
-   /* height:calc(100vh - 100px - 15%);*/
     padding-top: 15%;
 }
 
@@ -85,6 +84,7 @@ footer {
     height: 25%;
     display: block;
     margin: 5px auto;
+    color: white;
 }
 
 ul li .button i {
@@ -276,12 +276,22 @@ figure {
     
 }
 
+
+
+/* command player primo */
+
 .first-player {
     width: 33%;
+    padding-top: 10px;
 }
 
 .text {
     color: white; 
+    padding: 15px;
+}
+
+.icon-footer {
+    padding: 15px;
 }
 
 .text span {
@@ -302,17 +312,23 @@ figure {
 .command-player  {
     display: flex;
     width: 30%;
+    margin-left: 3%;
     justify-content: center;
-    border: 1px solid red;
     position: relative;
 }
 
 
+.command-player .fa-play {
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: red;
+    padding: 5px;
+}
 
 .command-end {
     width: 30%;
+    margin-left: 3%;
     justify-content: flex-end;
-    border: 1px solid red;
 }
 
 
@@ -328,10 +344,7 @@ figure {
     width: 300px;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .position {
     position: absolute;
