@@ -20,7 +20,7 @@ body {
 
 
 aside {
-   width: 200px;
+   width: 240px;
     background-color: black;
     height:calc(100vh - 100px);
     display: flex;
@@ -87,6 +87,10 @@ footer {
     color: white;
 }
 
+ul {
+    margin-top: 10px;
+}
+
 ul li .button i {
     font-size: 24px;
     display: inline-block;
@@ -96,14 +100,10 @@ ul li .button i {
 
 ul li .button {
     display: block;
-    margin: 6px auto;
-    
+    margin-left: 15px;
 }
 
 
-.button {
-    text-align: center;
-}
 
 
 
@@ -118,11 +118,13 @@ ul li .button {
 /* menu playlist */
 
 .playlist {
-    margin-top: 15px;
+    margin: 15px;
 }
+
 
 .playlist h3 {
     color: white;
+    margin: 15px;
 }
 
 .playlist i {
@@ -134,6 +136,7 @@ ul li .button {
 
 .playlist ul li {
     margin: 10px;
+    list-style-type: none;
 }
 
 
@@ -152,24 +155,53 @@ ul li .button {
 
 
 .account i {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     margin: 10px;
 }
 
 .icon-user i {
     background-color: grey;
-    padding: 10px;
+    padding: 7px;
     border-radius: 50%;
-    margin: 0px auto;
+    margin: 10px auto;
+}
+
+.icon-user {
+    margin-left: 9px;
+    margin-right: 9px;
 }
 
 .icon-arrow i {
-    border: 1px solid white;
+    border: 1px solid grey;
     border-radius: 50%;
     padding: 5px;
     margin: 10px auto;
 }
+
+.icon-arrow,
+.icon-arrow i {
+    font-size: 10px;
+    color: grey;
+    
+}
+
+.icon-arrow {
+    border-bottom: 1px solid grey;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon-arrow span {
+    margin-left: 10px;
+    color: grey;
+}
+
+.icon-user span {
+    margin-left: 5px;
+}
+
+
 
 
 
@@ -194,8 +226,8 @@ header a {
     color: white;
     text-decoration: none;
     border: 1px solid white;
-    border-radius: 30%;
-    padding: 20px;
+    border-radius: 50%;
+    padding: 20px 40px;
     margin-right: 30px;
 }
 
@@ -243,6 +275,7 @@ figure {
     /*width: calc(80% / 2);*/
     width: calc(100% / 6);
     justify-content: flex-start;
+    position: relative;
 }
 
 .img-home  {
@@ -260,12 +293,40 @@ figure {
     margin-top: 5px;
 }
 
+.icon-play {
+    color: white;
+    position: absolute;
+    font-size: 60px;
+    top: 30%;
+    left: 40%;
+    display: none;
+ 
+}
+
+/* secondo blocco figure */
+
+.second-block .img-home {
+    margin-right: 30px;
+}
+
+
 
 /* terzo blocco figure */
+
+
+.third-block h2 {
+    margin-bottom: 10px;
+}
+
+.third-block p {
+    color: grey;
+    margin-left: 15px;
+}
 
 .third-figure img {
     border-radius: 50%;
 }
+
 
 
 /* footer contenuto */
@@ -290,12 +351,11 @@ figure {
     padding: 15px;
 }
 
-.icon-footer {
-    padding: 15px;
-}
+
 
 .text span {
     color: grey;
+    font-size: 12px;
 }
 
 .player img {
@@ -303,9 +363,20 @@ figure {
     width: auto;
 }
 
-.player i {
+.command-player i,
+.command-end i {
     color: white;
     margin: 15px;
+}
+
+/* icon-footer first */
+
+.icon-footer {
+    margin: 15px ;
+}
+
+.icon-footer i {
+    color: grey;
 }
 
 /* command player */
@@ -318,12 +389,6 @@ figure {
 }
 
 
-.command-player .fa-play {
-    border: 1px solid white;
-    border-radius: 50%;
-    background-color: red;
-    padding: 5px;
-}
 
 .command-end {
     width: 30%;
@@ -363,4 +428,74 @@ figure {
 
 .position div {
     color: white;
+}
+
+.position .time {
+    margin-right: 5px;
+}
+
+.position .final-time {
+    margin-left: 5px;
+}
+
+
+
+/*** HOVER ***/
+
+/* hover header
+
+
+
+
+/* fine hover header
+
+
+
+/* hover nav */
+
+.button span:hover,
+.figure-container ul li:hover,
+#btn-playlist:hover,
+.playlist ul li:hover,
+.icon-arrow span:hover {
+    color: white;
+}
+
+/* fine hover nav */
+
+
+/* hover main */
+
+.img-home img:hover {
+    
+}
+
+
+
+
+/* fine hover main */
+
+
+/* hover footer */
+.text span:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+.icon-footer div i:hover {
+    color: white;
+}
+
+
+
+.progressBar:hover {
+    border: 1px solid rgb(14, 223, 14);
+}
+
+
+
+.img-home:hover .icon-play {
+    display: block;
 }
