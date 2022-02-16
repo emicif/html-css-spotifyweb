@@ -256,3 +256,77 @@ figure {
 }
 
 
+/* footer contenuto */
+
+.player {
+    display: flex;
+    width:100%;
+    
+}
+
+.first-player {
+    width: 33%;
+}
+
+.text {
+    color: white; 
+}
+
+.text span {
+    color: grey;
+}
+
+.player img {
+    height: 70px;
+    width: auto;
+}
+
+.player i {
+    color: white;
+    margin: 15px;
+}
+
+/* command player */
+.command-player  {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    border: 1px solid red;
+    position: relative;
+}
+
+
+
+.command-end {
+    width: 30%;
+    justify-content: flex-end;
+    border: 1px solid red;
+}
+
+
+
+.progressBar {
+    width: 80px;
+    height: 1px;
+    border: 1px solid white;
+    margin-top: 1.5rem;
+}
+
+.progressBar-long {
+    width: 300px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.position {
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+}
+
+.position div {
+    color: white;
+}
