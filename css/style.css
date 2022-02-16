@@ -4,46 +4,67 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
 
 
 /* layout */
 
-.container {
+.full-page {
     display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 100vh;
 }
 
 
-nav {
-    width: 20%;
+aside {
+   flex-basis: 200px;
     background-color: black;
-    min-height:calc(100vh - 200px);
+    height:calc(100vh - 100px);
+    display: flex;
+    width: 10%;
 }
 
 .interno {
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    /*flex-direction: column;*/
+    /*width: 85%;*/
+    flex-grow: 1;
+    height:calc(100vh - 100px);
+    overflow-y: auto;
+    position: relative;
 }
 
 
 header {
     width: 100%;
-    height: 20%;  
-    display: flex;
-    background-color: rgb(52, 52, 52)
+    height: 15%;  
+    background-color: rgba(20, 20, 20, 0.7);
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 main {
-    width: 100%;
-    min-height:calc(100vh - 200px);
-    background-color: red;
+    /*width: 100%;*/
+    height:calc(100vh - 100px);
+    background-color: rgb(50, 50, 50);
+    flex-grow: 1;
+    
 }
 
+.figure-container {
+    padding-top: 15%;
+}
 
-.footer {
-    display: inline-block;
-    background-color: grey;
+.flex {
+    display: flex;
+}
+
+footer {
+    background-color: red;
     width: 100%;
     height: 100px;
 }
@@ -69,10 +90,10 @@ ul li button {
     color: white;
 }
 
-
 .column {
     display: flex;
     flex-direction: column;
+    width: 15%;
 }
 
 #menu-top {
@@ -139,3 +160,67 @@ div a {
     border-radius: 40%;
     padding: 20px;
 }
+
+
+
+/***** MAIN *****/
+
+
+/* lista main */
+
+div ul {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+
+}
+
+div ul li {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: middle;
+    margin: 0px 10px;
+    color: rgb(150, 150, 150);
+}
+
+
+/* titolo main */
+
+main h2 {
+    color: white;
+    margin: 25px 15px;
+}
+
+
+
+/* figure main */
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-home {
+    /*width: calc(80% / 2);*/
+    width: calc(100% / 6);
+    justify-content: flex-start;
+}
+
+.img-home  {
+   width: calc(90% / 6);
+   margin: 15px;
+   
+}
+
+.img-home h3 {
+    color: white;  
+}
+
+.img-home p {
+    color: rgb(150, 150, 150);
+    margin-top: 5px;
+}
+
+
+

@@ -1,0 +1,25 @@
+
+/* figure main */
+
+
+@media screen and (max-width: 620px) {
+    .img-home {
+        /*width: calc(80% / 2);*/
+        width: calc(90% / 2);
+        margin: 5px;
+        
+       
+        
+    }
+
+    img {
+        height: 60%;
+    }
+
+    figure {
+        justify-content: center;
+    }
+}
+
+
+
