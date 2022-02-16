@@ -165,6 +165,7 @@ ul li .button {
     padding: 7px;
     border-radius: 50%;
     margin: 10px auto;
+    font-weight: 100;
 }
 
 .icon-user {
@@ -252,6 +253,11 @@ header a {
     vertical-align: middle;
     margin: 0px 10px;
     color: rgb(150, 150, 150);
+}
+
+
+.figure-container ul li:first-child {
+    border-bottom: 1px solid rgb(36, 233, 36);
 }
 
 
@@ -372,11 +378,13 @@ figure {
 /* icon-footer first */
 
 .icon-footer {
-    margin: 15px ;
+    margin: 15px;
 }
+
 
 .icon-footer i {
     color: grey;
+    font-weight: 100;
 }
 
 /* command player */
@@ -442,12 +450,14 @@ figure {
 
 /*** HOVER ***/
 
-/* hover header
+/* hover header */
+
+header a:hover {
+    transform: scale(1.1);
+}
 
 
-
-
-/* fine hover header
+/* fine hover header */
 
 
 
@@ -466,9 +476,10 @@ figure {
 
 /* hover main */
 
-.img-home img:hover {
-    
+.img-home:hover .icon-play {
+    display: block;
 }
+
 
 
 
@@ -496,6 +507,6 @@ figure {
 
 
 
-.img-home:hover .icon-play {
-    display: block;
+.command-player .fa-play-circle:hover {
+    transform: scale(1.2);
 }
