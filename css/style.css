@@ -204,16 +204,11 @@ ul li .button {
 
 
 
-
-
-
-
 /* fine nav */
 
 
+
 /******* HEADER *******/
-
-
 
 .flex {
     display: flex;
@@ -280,7 +275,7 @@ figure {
 .img-home {
     /*width: calc(80% / 2);*/
     width: calc(100% / 6);
-    justify-content: flex-start;
+    justify-content: space-around;
     position: relative;
 }
 
@@ -339,7 +334,8 @@ figure {
 
 .player {
     display: flex;
-    width:100%;
+    width: 100%;
+    justify-content: center;
     
 }
 
@@ -347,8 +343,12 @@ figure {
 
 /* command player primo */
 
+
+.player-generale {
+    width: 30%;
+}
+
 .first-player {
-    width: 33%;
     padding-top: 10px;
 }
 
@@ -375,6 +375,12 @@ figure {
     margin: 15px;
 }
 
+.command-player i {
+    font-size: 30px;
+}
+
+
+
 /* icon-footer first */
 
 .icon-footer {
@@ -386,6 +392,7 @@ figure {
     color: grey;
     font-weight: 100;
 }
+
 
 /* command player */
 .command-player  {
@@ -402,22 +409,28 @@ figure {
     width: 30%;
     margin-left: 3%;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .container-progress {
     width: 80px;
     height: 1px;
     border: 1px solid grey;
-    margin-top: 1.5rem;
+    
 }
+
+#cont-progress {
+    margin-top: 0.5rem;
+}
+
+/* progressbar*/
+
 
 .progressBar {
    width: 50%;
    border: 1px solid white;
    border-radius: 50%;
 }
-
-
 
 
 
@@ -450,12 +463,12 @@ figure {
 
 /*** HOVER ***/
 
+
 /* hover header */
 
 header a:hover {
     transform: scale(1.1);
 }
-
 
 /* fine hover header */
 
@@ -479,10 +492,6 @@ header a:hover {
 .img-home:hover .icon-play {
     display: block;
 }
-
-
-
-
 
 /* fine hover main */
 
@@ -510,3 +519,31 @@ header a:hover {
 .command-player .fa-play-circle:hover {
     transform: scale(1.2);
 }
+
+    /* pallino barra */
+
+.line {
+    font-size: 10px;
+    position: absolute;
+    right: 3%;
+    bottom: 25%;
+    display: none;
+}
+
+.line-top {
+    right: 45%;
+    bottom: -50%;
+}
+
+.command-end {
+    position: relative;
+}
+
+.progressBar:hover .line {
+    display: block;
+}
+
+
+
+
+
