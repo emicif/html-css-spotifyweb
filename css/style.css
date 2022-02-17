@@ -444,7 +444,7 @@ figure {
 
 .position {
     position: absolute;
-    left: 20%;
+    left: 17%;
     bottom: 10%;
 }
 
@@ -510,44 +510,24 @@ header a:hover {
 }
 
 
-
-.progressBar:hover {
-    border: 1px solid rgb(14, 223, 14);
+.fa-play-circle:hover {
+    transform: scale(1.1);
 }
 
 
 
-.command-player .fa-play-circle:hover {
-    transform: scale(1.2);
+label {
+    color: white;
 }
-
-    /* pallino barra */
-
+ 
 
 
-
-.line {
-    font-size: 10px;
-    position: absolute;
-    right: 3%;
-    bottom: 30%;
-    display: none;
-}
-
-.line-top {
-    right: 45%;
-    bottom: -50%;
-}
-
-.command-end {
-    position: relative;
-}
-
-.progressBar:hover .line {
-    display: block;
+.position form input {
+    color: green;
 }
 
 
+input#time {
+    width: 400px;
 
-
-
+}
